@@ -41,7 +41,7 @@ public class PlayerTeleport {
 		lastTime = Minecraft.getInstance().level.getGameTime();
 		
 		
-		//The player's view isn't locked, so unlocking is unecessary
+		//The player's view isn't locked, so unlocking is unnecessary
 		if(!ViewModify.getPitchLocked() && !ViewModify.getYawLocked() && !ViewModify.getAxisAlignLocked()) {
 			return;
 		}
@@ -62,20 +62,20 @@ public class PlayerTeleport {
 				.append(MutableComponent.create(new LiteralContents("View unlocked! Click "))
 						.withStyle(style -> style
 								.withColor(ChatFormatting.RED)
-								.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, MutableComponent.create(PlainTextContents.EMPTY).append(hoverText)))
+								.withHoverEvent(new HoverEvent.ShowText(MutableComponent.create(PlainTextContents.EMPTY).append(hoverText)))
 						)
 				)
 				.append(MutableComponent.create(new LiteralContents("here"))
 						.withStyle(style -> style
 								.withColor(ChatFormatting.BLUE)
-								.withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/vl relock"))
-								.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, MutableComponent.create(PlainTextContents.EMPTY).append("Reset view")))
+								.withClickEvent(new ClickEvent.RunCommand("/vl relock"))
+								.withHoverEvent(new HoverEvent.ShowText(MutableComponent.create(PlainTextContents.EMPTY).append("Reset view")))
 						)
 				)
 				.append(MutableComponent.create(new LiteralContents(" to restore lock."))
 						.withStyle(style -> style
 								.withColor(ChatFormatting.RED)
-								.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, MutableComponent.create(PlainTextContents.EMPTY).append(hoverText)))
+								.withHoverEvent(new HoverEvent.ShowText(MutableComponent.create(PlainTextContents.EMPTY).append(hoverText)))
 						)
 				)
 		, false);
