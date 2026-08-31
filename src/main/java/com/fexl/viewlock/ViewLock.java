@@ -12,7 +12,7 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.commands.CommandBuildContext;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.InteractionResult;
 import org.lwjgl.glfw.GLFW;
 
@@ -23,7 +23,7 @@ public class ViewLock implements ClientModInitializer {
     public static KeyMapping pitchKey;
     public static KeyMapping yawKey;
     public KeyMapping.Category category = KeyMapping.Category.register(
-            ResourceLocation.fromNamespaceAndPath("viewlock", "main")
+            Identifier.fromNamespaceAndPath("viewlock", "main")
     );
 
     //Function for client-side command registering
