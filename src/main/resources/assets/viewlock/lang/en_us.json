@@ -2,5 +2,6 @@
 	"key.viewlock.axisalign.name": "Axis Align",
 	"key.viewlock.pitch.name": "Pitch Toggle",
 	"key.viewlock.yaw.name": "Yaw Toggle",
-	"key.viewlock.category": "View Lock"
+	"key.viewlock.category": "View Lock",
+	"key.category.viewlock.main": "View Lock"
 }
