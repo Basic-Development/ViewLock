@@ -7,7 +7,7 @@ import com.mojang.brigadier.CommandDispatcher;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -45,7 +45,7 @@ public class ViewLock implements ClientModInitializer {
         });
 
         //Defines the axis-align key (default "Y")
-        axisAlignKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
+        axisAlignKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.viewlock.axisalign.name",
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_Y,
@@ -54,7 +54,7 @@ public class ViewLock implements ClientModInitializer {
         ));
 
         //Defines the pitch lock key (default "U")
-        pitchKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
+        pitchKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.viewlock.pitch.name",
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_U,
@@ -63,7 +63,7 @@ public class ViewLock implements ClientModInitializer {
         ));
 
         //Defines the yaw lock key (default "I")
-        yawKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
+        yawKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.viewlock.yaw.name",
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_I,

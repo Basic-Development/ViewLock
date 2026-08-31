@@ -58,7 +58,7 @@ public class PlayerTeleport {
 		String hoverText = "A teleportation command automatically disabled your locked view!";
 		
 		//Inform the user their view has been unlocked
-		player.displayClientMessage(MutableComponent.create(PlainTextContents.EMPTY)
+		player.sendSystemMessage(MutableComponent.create(PlainTextContents.EMPTY)
 				.append(MutableComponent.create(new LiteralContents("View unlocked! Click "))
 						.withStyle(style -> style
 								.withColor(ChatFormatting.RED)
@@ -78,6 +78,6 @@ public class PlayerTeleport {
 								.withHoverEvent(new HoverEvent.ShowText(MutableComponent.create(PlainTextContents.EMPTY).append(hoverText)))
 						)
 				)
-		, false);
+		);
 	}
 }
