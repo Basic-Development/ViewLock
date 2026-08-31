@@ -22,7 +22,6 @@ public class ViewLock implements ClientModInitializer {
     public static KeyMapping axisAlignKey;
     public static KeyMapping pitchKey;
     public static KeyMapping yawKey;
-    //ToDo: Clean this up so it looks better in the player Controls editor menu
     public KeyMapping.Category category = KeyMapping.Category.register(
             Identifier.fromNamespaceAndPath("viewlock", "main")
     );
