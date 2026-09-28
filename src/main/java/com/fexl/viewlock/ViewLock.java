@@ -14,7 +14,6 @@ import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.commands.CommandBuildContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.InteractionResult;
-import org.lwjgl.glfw.GLFW;
 
 public class ViewLock implements ClientModInitializer {
 
@@ -47,8 +46,8 @@ public class ViewLock implements ClientModInitializer {
         //Defines the axis-align key (default "Y")
         axisAlignKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.viewlock.axisalign.name",
-                InputConstants.Type.KEYSYM,
-                GLFW.GLFW_KEY_Y,
+                InputConstants.Type.KEYBOARD,
+                InputConstants.KEY_Y,
                 this.category
 
         ));
@@ -56,8 +55,8 @@ public class ViewLock implements ClientModInitializer {
         //Defines the pitch lock key (default "U")
         pitchKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.viewlock.pitch.name",
-                InputConstants.Type.KEYSYM,
-                GLFW.GLFW_KEY_U,
+                InputConstants.Type.KEYBOARD,
+                InputConstants.KEY_U,
                 this.category
 
         ));
@@ -65,8 +64,8 @@ public class ViewLock implements ClientModInitializer {
         //Defines the yaw lock key (default "I")
         yawKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.viewlock.yaw.name",
-                InputConstants.Type.KEYSYM,
-                GLFW.GLFW_KEY_I,
+                InputConstants.Type.KEYBOARD,
+                InputConstants.KEY_I,
                 this.category
 
         ));

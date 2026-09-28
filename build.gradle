@@ -7,7 +7,7 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-	archivesName = "viewlock-fabric-26.2+"
+	archivesName = "viewlock-fabric-26.3+"
 }
 
 repositories {

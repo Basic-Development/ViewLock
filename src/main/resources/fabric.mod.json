@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "viewlock",
-  "version": "1.2.5",
+  "version": "1.2.6",
 
   "name": "View Lock",
   "description": "Lock your view to a specific axis or position!",
@@ -37,7 +37,7 @@
   "depends": {
     "fabricloader": ">=0.19",
     "fabric-api-base": "*",
-    "minecraft": ">=26.2",
+    "minecraft": ">=26.3",
     "java": ">=25"
   }
 }
